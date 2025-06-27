@@ -1535,7 +1535,7 @@ iceballs = iceballs.filter(f => {
 });
 items = items.filter(it => it.active);
 
-const requiredScore = player.level * 10; // Tăng level #Tăng cấp
+const requiredScore = player.level * 100; // Tăng level #Tăng cấp
 if (player.score >= requiredScore) {
   player.level++;
   player.hearts += 1 + (UPGRADE_TIERS.hpBoost[playerUpgrades.hpBoost] || 0);
